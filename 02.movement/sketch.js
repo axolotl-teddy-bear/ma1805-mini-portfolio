@@ -21,6 +21,6 @@ function draw() {
   //trail.push(createVector (mouseX, mouseY));
   
   fill(value);
-  triangle(x1, y1, x2, y2, mouseX, mouseY);  
+  triangle(x1, y1, x2, y2, mouseX, mouseY); 
 
 }
