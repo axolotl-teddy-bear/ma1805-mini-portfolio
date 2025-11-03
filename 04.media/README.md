@@ -1,1 +1,3 @@
-hello heelo
+For project no.4, I want to make a surreal point-and-click adventure based off of my home-town. This idea was inspired by https://cloud.radical-openness.org/lost.html, created by Sai Bao & Yang Mu. One thing I really like was that the website has a 'dreamy' aesthetic, and the storyline is non-linear and obstract, like a dream. 
+
+In this project, all of the images used are either my own or taken from my family album. I wanted the assests to be personal, almost like you are looking into a bits and piece of my childhood memories. 
