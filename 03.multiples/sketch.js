@@ -44,24 +44,26 @@ function draw() {
     strokeWeight(0);
     fill(240, 245, 255, 150);
     if (rect_draw.ad_type === 1) {
-    rect(rect_draw.x, rect_draw.y, 110, 110);
-    image(gif1, rect_draw.x + 5, rect_draw.y + 13, 100, 90);
+      rect(rect_draw.x, rect_draw.y, 110, 110);
+      image(gif1, rect_draw.x + 5, rect_draw.y + 13, 100, 90);
+      
       //I think there is a better way to do this--it does not seem that effective to have all these else if statments doing mostly the same thing...
-  } else if (rect_draw.ad_type === 2) { 
-    rect(rect_draw.x, rect_draw.y, 110, 170);
-    image(gif2, rect_draw.x + 5, rect_draw.y + 14, 100, 150);
-  }
+    } 
+    else if (rect_draw.ad_type === 2) { 
+      rect(rect_draw.x, rect_draw.y, 110, 170);
+      image(gif2, rect_draw.x + 5, rect_draw.y + 14, 100, 150);
+    }
     else if (rect_draw.ad_type === 3) {
       rect(rect_draw.x, rect_draw.y, 110, 90);
-    image(gif3, rect_draw.x + 5, rect_draw.y + 13, 100, 70);
+      image(gif3, rect_draw.x + 5, rect_draw.y + 13, 100, 70);
     }
     else if (rect_draw.ad_type === 4) {
       rect(rect_draw.x, rect_draw.y, 170, 120);
-    image(gif4, rect_draw.x + 5, rect_draw.y + 13, 160, 100);
+      image(gif4, rect_draw.x + 5, rect_draw.y + 13, 160, 100);
     }
     else if (rect_draw.ad_type === 5) {
       rect(rect_draw.x, rect_draw.y, 150, 120);
-    image(gif5, rect_draw.x + 5, rect_draw.y + 13, 140, 100);
+      image(gif5, rect_draw.x + 5, rect_draw.y + 13, 140, 100);
     }
     
     fill(255, 0, 0);
@@ -79,11 +81,13 @@ function draw() {
   
 
   function mousePressed() {
+
     //this function took me the longest to figure out. definately the biggest challange I had to overcome in this project
 
-//turns out, I had this function nested inside the draw function, which frustated me lots. 
+    //turns out, I had this function nested inside the draw function, which frustated me lots. 
 
-//funny how simple mistakes like this in code can cuase so many issues
+    //funny how simple mistakes like this in code can cuase so many issues
+
     for (let i = rect_pos.length - 1; i >= 0; i--) {
       let rect_draw = rect_pos[i];
       if (dist(mouseX, mouseY, rect_draw.x + 2, rect_draw.y + 2) < 20) {
