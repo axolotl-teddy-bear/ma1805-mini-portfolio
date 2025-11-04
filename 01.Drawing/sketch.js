@@ -3,7 +3,6 @@ function preload() {
 }
 
 function setup() {
-
   createCanvas(550, 400);
 }
 
@@ -37,7 +36,7 @@ function draw() {
   rect(152.5, 190, 95, 170, 15, 15, 15, 15)
   pop();
   
-//these three are white circle that overlay the light blue rectangle i've made. this makes a wave pattern that Im quite proud of
+  //these three are white circle that overlay the light blue rectangle i've made. this makes a wave pattern that Im quite proud of
   circle(200, 210, 40)
   circle(165, 210, 40)
   circle(235, 210, 40)
