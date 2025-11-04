@@ -1,24 +1,64 @@
+function preload() {
+  img1 = loadImage("Images/IMG_1966.jpeg");
+}
+
 function setup() {
-  createCanvas(400, 600);
+
+  createCanvas(550, 400);
 }
 
 function draw() {
-  background(200);
+  //background(200);
+  //image(img1, 0, 0, 550, 400) //I had the idea of putting an image as the background--an image of a asian fish market to relly drive the concept home. but i thought better because the prompt was to make an emoji, and it would not make sense if an emoji had a background. 
   rec_ax=150
   rec_bx=250
   rec_ay=380
   rec_by=550
   
+  rect(195, 20, 170, 370)
+  
+  applyMatrix(1, 0, 0, 1, 120, -80) //i added this matrix so that moving the entire image on the background would be easier. this is one of my last moves so it didnt interfere with the coding process much. 
+  scale(0.8)
+  
   //body 
   push();
-  fill(100);
+  fill(250);
   strokeWeight(0);
-  rect(150, 190, 100, 230)
+  rect(150, 190, 100, 230) 
+  push();
+  fill(0)
+  triangle(150, 190, 148, 398, 128, 188)//black outline
+  triangle(250, 190, 252, 402, 272, 192)
+  pop();
+  
+  //water
+  push();
+  fill('lightblue')
+  rect(152.5, 190, 95, 170, 15, 15, 15, 15)
+  pop();
+  
+//these three are white circle that overlay the light blue rectangle i've made. this makes a wave pattern that Im quite proud of
+  circle(200, 210, 40)
+  circle(165, 210, 40)
+  circle(235, 210, 40)
+
   triangle(150, 190, 150, 400, 130, 190)
   triangle(250, 190, 250, 400, 270, 190)
+  
+  push();
+  fill(0);
+  triangle(128, 178, 107, 178, 128, 202)
+  pop();
   triangle(128, 180, 110, 180, 128, 200)
   
   //cover
+  push(); //black outline
+  fill(0)
+  rect(163, 148, 71, 31)
+  triangle(163, 148, 158, 148, 163, 165)
+  triangle(233, 148, 242, 148, 237, 165)
+  pop();
+  
   rect(165, 150, 70, 30)
   triangle(165, 150, 160, 150, 165, 165)
   triangle(235, 150, 240, 150, 235, 165)
@@ -27,14 +67,11 @@ function draw() {
   rect(167, 152, 65, 25)
   triangle(167, 152, 164, 152, 167, 165)
   triangle(232, 152, 236, 152, 232, 165)
-  //cover
   
   fill(0)
   rect(128, 180, 144, 25)
   ellipse(200, 180, 144, 40)
   fill(250)
-  rect(155, 210, 90, 150, 20, 20, 20, 20)
-  
   
   //reflections
   fill(150);
@@ -45,8 +82,6 @@ function draw() {
   rect(230, 180, 10, 24)
   pop();
 
-  
-  
   //the base of the blender
   fill(100);
   ellipse(200, rec_by, 145, 35)
@@ -99,12 +134,22 @@ function draw() {
   circle(200, 480, 50)
   pop();
   
+  push();
   fill(0)
   rect(195, 455, 10, 20)
   
   fill(250)
   translate(200, 480)
   circle(0, 0, 5)
+  pop();
   
+  
+  //fish 
+  push();
+  strokeWeight(0)
+  fill('orange')
+  ellipse(200, 270, 60, 35)
+  triangle(179, 257, 210, 255, 200, 237)
+  pop();
 }
 
