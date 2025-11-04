@@ -24,11 +24,11 @@ function draw() {
   push();
   fill(250);
   strokeWeight(0);
-  rect(150, 190, 100, 230) 
+  rect(150, 190, 100, 230) //body
   push();
   fill(0)
-  triangle(150, 190, 148, 398, 128, 188)//black outline
-  triangle(250, 190, 252, 402, 272, 192)
+  triangle(150, 190, 147, 385, 128, 188)//black outline
+  triangle(250, 190, 253, 385, 272, 192)
   pop();
   
   //water
@@ -82,6 +82,8 @@ function draw() {
   rect(230, 180, 10, 24)
   pop();
 
+  
+  
   //the base of the blender
   fill(100);
   ellipse(200, rec_by, 145, 35)
@@ -147,9 +149,21 @@ function draw() {
   //fish 
   push();
   strokeWeight(0)
-  fill('orange')
-  ellipse(200, 270, 60, 35)
-  triangle(179, 257, 210, 255, 200, 237)
+  fill(184, 124, 22)
+  ellipse(205, 270, 53, 30)
+  triangle(179, 264, 210, 255, 205, 240)
+  triangle(190, 270, 170, 300, 160, 240)
   pop();
+  
+  fill('lightblue');
+  strokeWeight(0)
+  triangle(175, 270, 170, 300, 160, 240)
+  
+  fill(255, 200)
+  circle(220, 269, 10)
+  fill(0)
+  circle(220, 269, 6)
+  
+  fill(255)
 }
 
