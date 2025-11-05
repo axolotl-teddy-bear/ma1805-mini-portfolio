@@ -5,7 +5,7 @@ let rect_pos = [];
 
 function preload(){
   img1 = loadImage("Images/desktop.png")
-  img2 = loadImage("Images/bg.jpeg")
+  img2 = loadImage("Images/bg.jpg")
   img3 = loadImage("Images/windows.png")
   img4 = loadImage("Images/hand.png")
   img5 = loadImage("Images/mouse.png")
