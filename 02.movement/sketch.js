@@ -14,6 +14,9 @@ function preload() {
   //turns out, the .gif image was typed in as .GIF in my file. 
   //I learnt the hard way to keep my file names consitent and EXACTLY THE SAME. 
   gif1 = loadImage("GIF/dragondance.gif");
+
+  //i added the sound last minute. i thought it would be a cool element to add to the atmosphere
+  sound = loadSound('sounds/drumming.mp3');
 }
 
 function setup() {
@@ -29,9 +32,11 @@ function setup() {
   browcolor = color("floralwhite");
   decorcolor1 = color("forestgreen");
   decorcolor2 = color("crimson");
+  sound.loop();
 }
 
 function draw() {
+  
   r = random(0, 255);
   g = random(0, 255);
   b = random(0, 255);
@@ -143,6 +148,13 @@ function draw() {
   rotate((5 * PI) / 6);
   ellipse(0, 0, 70, 40);
   pop();
+
+  textSize(32); 
+  fill(0, 150); // Set the text color to black with some transparency
+  rect(-120, -20, 250, 50);
+  fill(255); 
+  textAlign(CENTER, CENTER); 
+  text('Click anywhere!', 0, 10); 
 
 
   //the section below labbled mirror is a trick i saw online that flips the shapes along the x-axis. I chose to do this instead of drawing each shape manually because of efficiency. 
