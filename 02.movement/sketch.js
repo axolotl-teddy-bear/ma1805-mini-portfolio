@@ -1,3 +1,4 @@
+//This is the project that i spent the longest time on. 
 let headcolor;
 let horncolor;
 let mouthcolor;
@@ -13,7 +14,9 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(2000, 1080);
+  createCanvas(2000, 1080); 
+  //below lists off all of the parts that change color when the mouse is clicked. I chose not to make all shapes change color, bacuase i still wanted the lion to be recognisable and not become a jumble of colors. 
+  // the eyewhites and teeth stay white. the tongue stays dark red.
   headcolor = color("firebrick");
   horncolor = color("crimson");
   mouthcolor = color("firebrick");
@@ -82,14 +85,15 @@ function draw() {
   circle(240, 250, 75);
 
   //left pupil
-  let eyeCenterX = 250; // Center of the eyeball
+  let eyeCenterX = 250; 
   let eyeCenterY = 250;
-  let eyeRadius = 25; // Half of the eyeball diameter
+  let eyeRadius = 25; 
 
-  let pupilX = 225 + (mouseX - 370 * 2) / 10; // Calculate the pupil position
+  let pupilX = 225 + (mouseX - 370 * 2) / 10; 
   let pupilY = 235 + (mouseY - 100 * 2) / 10;
 
-  pupilX = constrain(pupilX, eyeCenterX - eyeRadius, eyeCenterX + eyeRadius); // Constrain the pupil's position within the eye
+  //I tried to use the same method i used in project 3 to make the eyes move along with the cursor, but the pupils kept going outside of the eyewhite area. this is why i had to limit the movement area using the constrain() function. 
+  pupilX = constrain(pupilX, eyeCenterX - eyeRadius, eyeCenterX + eyeRadius); 
   pupilY = constrain(pupilY, eyeCenterY - eyeRadius, eyeCenterY + eyeRadius);
 
   fill(pupilcolor);
@@ -137,10 +141,12 @@ function draw() {
   ellipse(0, 0, 70, 40);
   pop();
 
+
+  //the section below labbled mirror is a trick i saw online that flips the shapes along the x-axis. I chose to do this instead of drawing each shape manually because of efficiency. 
   //mirror
   push();
   translate(600, 0); //move the x-axis origin to the right
-  scale(-1, 1);
+  scale(-1, 1); //flips the images
 
   //right upper lip
   strokeWeight(0);
@@ -162,13 +168,12 @@ function draw() {
   fill(250);
   circle(240, 250, 75);
 
-  eyeCenterX = 250; // Center of the eyeball
+  //right pupil
+  eyeCenterX = 250; 
   eyeCenterY = 250;
 
-  // Calculate the pupil position for the right eye
   pupilX = 260 - (mouseX - 370 * 2) / 10;
 
-  // Constrain the pupil's position within the eye
   pupilX = constrain(pupilX, eyeCenterX - eyeRadius, eyeCenterX + eyeRadius);
   pupilY = 235 + (mouseY - 100 * 2) / 10;
   pupilY = constrain(pupilY, eyeCenterY - eyeRadius, eyeCenterY + eyeRadius);

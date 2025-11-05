@@ -1,8 +1,9 @@
 /*
 function preload() {
   img1 = loadImage("Images/IMG_1966.jpeg");
-}
   */
+
+  //I had the idea of putting an image as the background--an image of a asian fish market to relly drive the concept home. but i thought better because the prompt was to make an emoji, and it would not make sense if an emoji had a background. 
 
 function setup() {
   strokeWeight(0);
@@ -11,7 +12,7 @@ function setup() {
 
 function draw() {
   //background(200);
-  //image(img1, 0, 0, 550, 400) //I had the idea of putting an image as the background--an image of a asian fish market to relly drive the concept home. but i thought better because the prompt was to make an emoji, and it would not make sense if an emoji had a background. 
+  //image(img1, 0, 0, 550, 400) 
   rec_ax=150
   rec_bx=250
   rec_ay=380
@@ -19,7 +20,8 @@ function draw() {
   
   //rect(195, 20, 300, 370);
   
-  applyMatrix(1, 0, 0, 1, 120, -80); //i added this matrix so that moving the entire image on the background would be easier. this is one of my last moves so it didnt interfere with the coding process much. 
+  //below is to scale and place my emoji on the canvas to my liking. this makes it so that i dont have to change lines of code to change the emoji placement 
+  applyMatrix(1, 0, 0, 1, 120, -80); 
   scale(0.8);
   
   //body 
