@@ -162,7 +162,7 @@ function draw() {
   fill(250);
   circle(240, 250, 75);
 
-  eyeCenterX = 240; // Center of the eyeball
+  eyeCenterX = 250; // Center of the eyeball
   eyeCenterY = 250;
 
   // Calculate the pupil position for the right eye
