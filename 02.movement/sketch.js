@@ -22,7 +22,7 @@ function draw() {
     strokeJoin(ROUND)
     strokeWeight(50)
     stroke('firebrick')
-    rect(230, 250, 140, 130, 50, 50, 50, 50)
+    rect(230, 250, 140, 130, 50, 50, 50, 50) // here i found out that the rounded corners do not go past 50. anything else above that would not round out the rectangle croners even more. but i still wasnt happy with how the image was looking, so i had to use stroke functions to achieve the look i wanted
     pop()
     //circle(300, 250, 240)
 
@@ -47,12 +47,12 @@ function draw() {
     fill('firebrick')
     circle(300, 290, 160)
 
-    ///fill('darkred')
-    //circle(300, 260, 160)
+    fill('darkred')
+    ellipse(300, 320, 120, 70)
 
     //left eye
     fill(250)
-    circle(220, 250, 130)
+    circle(220, 250, 120)
 
     fill('firebrick')
     circle(230, 250, 100)
@@ -81,6 +81,16 @@ function draw() {
     //decorative ball
     fill('forestgreen')
     circle(265, 280, 35)
+
+    //left ear
+    push()
+    fill('firebrick')
+    strokeJoin(ROUND)
+    strokeWeight(50)
+    stroke('firebrick')
+    triangle(200, 170, 190, 150, 250, 170)
+    pop()
+
 
     //left eyebrow
     push()
@@ -114,7 +124,7 @@ function draw() {
 
     //mirror
     push();
-      translate(600, 0); //move the horizontal origin to the far right side of the canvas
+      translate(600, 0); //move the x-axis origin to the right
       scale(-1, 1)
 
       //right upper lip
@@ -130,7 +140,7 @@ function draw() {
 
       //right eye
       fill(250)
-      circle(220, 250, 130)
+      circle(220, 250, 120)
 
       fill('firebrick')
       circle(230, 250, 100)
@@ -157,6 +167,15 @@ function draw() {
       //decorative ball
       fill('forestgreen')
       circle(265, 280, 35)
+
+      //right ear
+      push()
+      fill('firebrick')
+      strokeJoin(ROUND)
+     strokeWeight(50)
+      stroke('firebrick')
+      triangle(200, 170, 190, 150, 250, 170)
+      pop()
 
       //right eyebrow
       push()
@@ -188,6 +207,8 @@ function draw() {
       pop()
 
     pop()
+
+    
 
     //center elements 
     fill('crimson')
