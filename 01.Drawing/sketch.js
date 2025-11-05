@@ -1,6 +1,8 @@
+/*
 function preload() {
   img1 = loadImage("Images/IMG_1966.jpeg");
 }
+  */
 
 function setup() {
   createCanvas(550, 400);
