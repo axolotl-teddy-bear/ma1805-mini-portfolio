@@ -19,7 +19,7 @@ function preload(){
 }
 
 function setup() {
-  //frameRate(200) //initially I tried to use framerate to change the speed of whihc the ads were pooping up. however, this seems to slow down eveything, not just the ads. 
+  //frameRate(200) //initially I tried to use framerate to change the speed of which the ads were pooping up. however, this seems to slow down eveything, not just the ads. 
   createCanvas(1050, 900);
 }
 
