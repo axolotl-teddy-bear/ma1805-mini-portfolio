@@ -1,4 +1,4 @@
-#ma1805-mini-portoflio
+# ma1805-mini-portoflio
 
 https://axolotl-teddy-bear.github.io/ma1805-mini-portfolio/
 
