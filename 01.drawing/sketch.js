@@ -13,6 +13,8 @@ function setup() {
 function draw() {
   //background(200);
   //image(img1, 0, 0, 550, 400) 
+
+  //trying to make the process easier for myself actually made things for diffcult. below was an attempt to document main points of a shape so that i can keep track of coordinates easier. but i soon realised that this confuses me even more then just trial-and-error-ing the x and y inputs. so, i soon abandoned this method.
   rec_ax=150
   rec_bx=250
   rec_ay=380
@@ -171,3 +173,5 @@ function draw() {
   fill(255);
 }
 
+//for this project, im really proud of how i utilised the layering system to get the shapes that i wanted. especially the water shape.
+//to improve, i think i could make the fish move--maybe make it swim around the blender a little. that would be a cool addiction to the overall project.  

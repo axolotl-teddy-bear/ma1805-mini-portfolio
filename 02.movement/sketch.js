@@ -1,4 +1,4 @@
-//This is the project that i spent the longest time on. 
+
 let headcolor;
 let horncolor;
 let mouthcolor;
@@ -10,6 +10,9 @@ let decorcolor1;
 let decorcolor2;
 
 function preload() {
+  //during the process of debugging, i realised that the links on my github did not work. the console kept popping up 404 errors and i didnt understand why. 
+  //turns out, the .gif image was typed in as .GIF in my file. 
+  //I learnt the hard way to keep my file names consitent and EXACTLY THE SAME. 
   gif1 = loadImage("GIF/dragondance.gif");
 }
 
