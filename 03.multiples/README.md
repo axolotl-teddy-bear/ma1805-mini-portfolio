@@ -1,0 +1,5 @@
+This project was inspired by my early experiences with the internet and computers. When I read the prompt, I knew I wanted to do something with the idea of advertisements. Advertisements are a core part of the internet, even in its early days. Today, it's as big as ever, being the main method most web companies make a profit. Hence, taking inspiration from my memories, I wanted to make an ádvertisement simulator in a sense.
+
+The background is a picture I found of my grandma's desktop--the same exact desktop that I accidentally installed so many viruses in. The desktop is of the Windows 7 default wallpaper, reminiscent of the times when I used the internet as a child. The ads are assets I took from the internet. Even though I couldn't find ads that were relevant to the times (2000-2010s), I did manage to find some that are similar in aesthetics. 
+
+This project captures the phenomenon of repetitive advertisements, and also my nostalgia regarding the early internet.
