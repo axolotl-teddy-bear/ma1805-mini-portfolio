@@ -4,17 +4,17 @@ let rect_pos = [];
 //this is my first time importing images in my projects. it took a while for me to figure out, especially with my device since I work on ipad.
 
 function preload(){
-  img1 = loadImage("Images/desktop.png")
+  img1 = loadImage("Images/desktop.PNG")
   img2 = loadImage("Images/bg.jpg")
-  img3 = loadImage("Images/windows.png")
-  img4 = loadImage("Images/hand.png")
-  img5 = loadImage("Images/mouse.png")
-  img6 = loadImage("Images/cursor.png")
-  gif1 = loadImage("GIF/IMG_5992.gif")
-  gif2 = loadImage("GIF/IMG_5990.gif")
-  gif3 = loadImage("GIF/IMG_5981.gif")
-  gif4 = loadImage("GIF/IMG_5982.gif")
-  gif5 = loadImage("GIF/IMG_5988.gif")
+  img3 = loadImage("Images/windows.PNG")
+  img4 = loadImage("Images/hand.PNG")
+  img5 = loadImage("Images/mouse.PNG")
+  img6 = loadImage("Images/cursor.PNG")
+  gif1 = loadImage("GIF/IMG_5992.GIF")
+  gif2 = loadImage("GIF/IMG_5990.GIF")
+  gif3 = loadImage("GIF/IMG_5981.GIF")
+  gif4 = loadImage("GIF/IMG_5982.GIF")
+  gif5 = loadImage("GIF/IMG_5988.GIF")
 
 }
 
