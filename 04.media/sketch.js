@@ -11,7 +11,7 @@ let texts = [
 let text_num = 0;
 
 function preload(){
-  img1 = loadImage("Images/Beach.jpeg");
+  img1 = loadImage("Images/beach.jpg");
 }
 
 function setup() {

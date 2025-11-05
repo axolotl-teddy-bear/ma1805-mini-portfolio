@@ -20,10 +20,11 @@ function preload(){
 
 function setup() {
   //frameRate(200) //initially I tried to use framerate to change the speed of whihc the ads were pooping up. however, this seems to slow down eveything, not just the ads. 
-  createCanvas(700, 600);
+  createCanvas(1050, 900);
 }
 
 function draw() {
+  scale(1.5)
   background(220);
   image(img2, 0, 0, 700, 600);
   image(img1, 35, 35, 630, 530);
@@ -74,13 +75,12 @@ function draw() {
   
   //for the sake of time, though, I couldnt add this element in time
   
-  if (mouseX >= 125 && mouseX <= 555 && mouseY >= 85 && mouseY <=355) { //this code below adds a tiny mouse cursor image on the desktop when your mouse hovers over it. just a fun detail I wanted to add.
-    image(img6, mouseX, mouseY, 10, 10);
+  if (mouseX / 1.5 >= 125 && mouseX / 1.5 <= 555 && mouseY / 1.5 >= 85 && mouseY / 1.5 <= 355) {
+    image(img6, mouseX / 1.5, mouseY / 1.5, 10, 10);
   }
 }
   
 
-  function mousePressed() {
 
     //this function took me the longest to figure out. definately the biggest challange I had to overcome in this project
 
@@ -88,10 +88,11 @@ function draw() {
 
     //funny how simple mistakes like this in code can cuase so many issues
 
-    for (let i = rect_pos.length - 1; i >= 0; i--) {
-      let rect_draw = rect_pos[i];
-      if (dist(mouseX, mouseY, rect_draw.x + 2, rect_draw.y + 2) < 20) {
-        rect_pos.splice(i, 1)
+    function mousePressed() {
+  for (let i = rect_pos.length - 1; i >= 0; i--) {
+    let rect_draw = rect_pos[i];
+    if (dist(mouseX / 1.5, mouseY / 1.5, rect_draw.x + 2, rect_draw.y + 2) < 20) {
+      rect_pos.splice(i, 1);
       }
     }
   }
