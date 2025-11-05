@@ -15,7 +15,7 @@ function preload() {
   //I learnt the hard way to keep my file names consitent and EXACTLY THE SAME. 
   gif1 = loadImage("GIF/dragondance.gif");
 
-  //i added the sound last minute. i thought it would be a cool element to add to the atmosphere
+  //i added the sound last minute. i thought it would be a cool element to add to the admosphere
   sound = loadSound('sounds/drumming.mp3');
 }
 
