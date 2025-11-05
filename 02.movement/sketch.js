@@ -93,9 +93,9 @@ function draw() {
   circle(240, 250, 75);
 
   //left pupil
-  let eyeCenterX = 250; 
+  let eyeCenterX = 240; 
   let eyeCenterY = 250;
-  let eyeRadius = 25; 
+  let eyeRadius = 20; 
 
   let pupilX = 225 + (mouseX - 370 * 2) / 10; 
   let pupilY = 235 + (mouseY - 100 * 2) / 10;
@@ -184,7 +184,7 @@ function draw() {
   circle(240, 250, 75);
 
   //right pupil
-  eyeCenterX = 250; 
+  eyeCenterX = 240; 
   eyeCenterY = 250;
 
   pupilX = 260 - (mouseX - 370 * 2) / 10;
